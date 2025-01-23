@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TP6/.vs/Nword
+/TP6/Monopoly/x64/Debug/Monopoly.tlog
+/TP6/Monopoly/x64/Debug
+/TP6/x64/Debug

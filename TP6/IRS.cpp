@@ -1,9 +1,9 @@
 #include "IRS.hpp"
 #include "Game.hpp"
 
-IRS::IRS() : Case("IRS")
+IRS::IRS(const std::string name, int tax_value) : Case(name)
 {
-	this->m_tax_value = 200;
+	this->m_tax_value = tax_value;
 }
 
 void IRS::onLanding(Player* landingPlayer)

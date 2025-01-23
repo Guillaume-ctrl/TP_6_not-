@@ -4,7 +4,7 @@
 class IRS : public Case
 {
 public:
-	IRS();
+	IRS(const std::string name, int tax_value);
 	void onLanding(Player* landingPlayer);
 
 private:

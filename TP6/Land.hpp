@@ -1,3 +1,4 @@
+#pragma once
 #include "Case.hpp"
 
 class Land : public Case

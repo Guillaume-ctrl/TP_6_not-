@@ -1,11 +1,5 @@
-/**
- * @file Case.hpp
- * @brief Declaration of the Case class for the game board.
- */
-
 #pragma once
 #include <string>
-#include "Player.hpp"
 
  /**
   * @class Case
@@ -31,7 +25,7 @@ public:
      * @param landingPlayer Pointer to the player who landed on this case.
      * This method must be implemented by derived classes.
      */
-    virtual void onLanding(Player* landingPlayer) = 0;
+    virtual void onLanding(class Player* landingPlayer) = 0;
 
     /**
      * @brief Retrieves the next case in the sequence.

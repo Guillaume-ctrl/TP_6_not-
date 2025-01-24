@@ -2,7 +2,8 @@
 
 Case::Case(const std::string& name) : m_name(name)
 {
-
+	this->m_next_case = nullptr;
+	this->m_previous_case = nullptr;
 }
 
 inline std::string Case::getName() const

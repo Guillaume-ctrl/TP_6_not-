@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "Case.hpp"
+
 class Player
 {
 public:
@@ -10,6 +12,7 @@ public:
 	void addMoney(int amount);
 
 private:
+	Case* m_current_case;
 	int m_money;
 	std::string m_name;
 };

@@ -122,7 +122,7 @@ void Game::play()
         {
             // Code for TERRAIN_GARE_SERVICE_PUBLIC
             // If the terrain is not owned yet, propose to the player if he/she wants to buy it
-            if (CaseCourante->getAcheteur() == nullptr && CaseCourante->getAcheteur() == nullptr && CaseCourante->isAchetable())
+            if (CaseCourante->getAcheteur() == nullptr && CaseCourante->isAchetable())
             {
                 std::cout << "You have : " << (int) player->getMoneyValue() << std::endl;
                 if (player->getMoneyValue() < CaseCourante->getPrix())
@@ -461,8 +461,6 @@ void Game::displayInfoCase(Case* c) const {
 
     std::cout << "----------------------------" << std::endl;
 }
-
-
 
 Player* Game::getBank() const
 {

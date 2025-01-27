@@ -1,0 +1,7 @@
+<map id="Player::payPlayer" name="Player::payPlayer">
+<area shape="rect" id="Node000001" title="Transfers money from this player to another player." alt="" coords="5,31,130,57"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a86ad66429e7bf8ef4640bac1d0f3476f" title="Adds money to the player&#39;s balance." alt="" coords="178,5,304,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,32,162,28,162,33,130,38"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a45fa04a2a4ff9235e6c100b7c6ab232a" title="Constructor for the Player class." alt="" coords="189,56,292,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,50,175,57,174,62,130,56"/>
+</map>

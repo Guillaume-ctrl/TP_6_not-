@@ -1,0 +1,62 @@
+<map id="Game::play" name="Game::play">
+<area shape="rect" id="Node000001" title="Executes the main game loop for the current player&#39;s turn." alt="" coords="5,613,94,640"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a6c3d1fa200c295ed6807d6e63527e99d" title="Adds a card to the player&#39;s collection." alt="" coords="167,5,282,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,613,52,503,65,332,77,242,93,159,113,90,126,63,140,42,151,32,155,36,144,46,130,66,118,92,98,160,82,243,71,333,58,504,54,613"/>
+<area shape="rect" id="Node000003" href="$class_case.html#ac6ce6c2e98c226c46058a9fe7f4a644a" title="Add a house to the case." alt="" coords="165,56,284,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="49,613,54,511,68,355,80,274,96,198,115,136,127,112,140,93,149,84,153,88,144,96,131,114,120,138,101,200,85,275,74,356,59,512,54,613"/>
+<area shape="rect" id="Node000004" href="$class_player.html#a86ad66429e7bf8ef4640bac1d0f3476f" title="Adds money to the player&#39;s balance." alt="" coords="161,107,288,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="49,613,56,520,71,379,83,306,98,238,117,182,140,144,146,137,150,141,144,147,122,184,104,240,89,307,77,380,61,520,54,613"/>
+<area shape="rect" id="Node000005" href="$class_case.html#a1fa15d4b3faafb3719481ff232f5139d" title="Add a hotel to the case." alt="" coords="168,157,281,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="49,613,58,530,76,407,103,284,120,235,140,201,152,190,156,194,144,204,125,237,108,286,81,408,64,530,55,613"/>
+<area shape="rect" id="Node000006" href="$class_game.html#ac8ca4cf23602c2065fa05b52c99535e1" title="Displays information about a specific case on the board." alt="" coords="145,461,304,488"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="56,611,88,560,112,531,140,505,160,492,163,497,143,509,116,534,92,563,60,614"/>
+<area shape="rect" id="Node000007" href="$class_case.html#a4fc658cd0402223da783a7d7f987623e" title="Get the owner of the case." alt="" coords="362,209,492,236"/>
+<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="50,612,60,542,78,441,105,342,121,303,140,277,162,259,187,245,240,226,295,217,347,214,347,220,296,222,241,231,189,250,165,263,144,280,126,306,110,344,83,442,65,543,55,613"/>
+<area shape="rect" id="Node000008" href="$class_case.html#a60e8e3a5d1c70e7e26a7bb99ecabe0a6" title="Get the name of the case." alt="" coords="355,260,499,287"/>
+<area shape="poly" id="edge16_Node000001_Node000008" title=" " alt="" coords="48,613,49,559,60,481,71,438,88,396,110,357,140,323,161,307,185,294,237,276,290,267,339,264,340,270,290,272,238,281,187,299,164,311,143,327,114,360,92,398,76,440,65,482,54,560,53,613"/>
+<area shape="rect" id="Node000009" href="$class_case.html#a0159fc224ee63c2fa3b865b510ff6fb9" title="Get the color of the case." alt="" coords="366,312,489,339"/>
+<area shape="poly" id="edge17_Node000001_Node000009" title=" " alt="" coords="48,613,52,565,66,499,77,463,93,428,114,396,140,369,163,352,189,339,244,323,299,316,350,315,350,320,300,321,245,328,191,344,166,357,143,373,118,399,98,431,82,465,71,500,58,566,54,613"/>
+<area shape="rect" id="Node000010" href="$class_player.html#a73e4ff2d70e62ca7e3be1d9b4ad9de85" title="Gets the player&#39;s name." alt="" coords="368,364,487,391"/>
+<area shape="poly" id="edge20_Node000001_Node000010" title=" " alt="" coords="49,612,56,572,71,516,97,458,117,432,140,410,164,395,190,383,246,368,301,363,352,365,352,370,302,369,247,374,192,388,167,399,143,414,121,435,102,461,76,518,61,573,55,613"/>
+<area shape="rect" id="Node000011" href="$class_case.html#a9e023d2c2ea0a23a6785077d24f2ff67" title="Get the purchase price of the case." alt="" coords="376,417,478,444"/>
+<area shape="poly" id="edge23_Node000001_Node000011" title=" " alt="" coords="51,612,59,578,75,532,102,485,119,464,140,447,166,433,194,423,252,412,310,411,361,415,361,421,310,416,253,417,195,428,168,438,143,452,123,468,106,488,80,534,64,579,56,614"/>
+<area shape="rect" id="Node000012" href="$class_case.html#a2c87755861d97328b319825fb2810602" title="Get the tax value for the case." alt="" coords="374,475,480,501"/>
+<area shape="poly" id="edge24_Node000001_Node000012" title=" " alt="" coords="65,611,98,585,140,560,196,538,254,520,358,496,359,501,255,525,198,543,143,565,101,590,68,615"/>
+<area shape="rect" id="Node000013" href="$class_case.html#a718be72771b72bb820de3cc38101be27" title="Get the type of the case." alt="" coords="358,537,496,564"/>
+<area shape="poly" id="edge25_Node000001_Node000013" title=" " alt="" coords="87,610,141,593,245,572,342,558,343,563,246,577,142,599,88,615"/>
+<area shape="rect" id="Node000014" href="$class_case.html#ab1a7655e73fe8f6a375adf2f0edbee1c" title="Check if the case can be purchased." alt="" coords="363,588,491,615"/>
+<area shape="poly" id="edge26_Node000001_Node000014" title=" " alt="" coords="94,621,348,604,348,609,94,626"/>
+<area shape="rect" id="Node000015" href="$class_case.html#a2e5526da0d8844014c86950fa8a33db1" title="Check if the case has been sold." alt="" coords="374,639,480,665"/>
+<area shape="poly" id="edge27_Node000001_Node000015" title=" " alt="" coords="94,627,359,645,359,650,94,632"/>
+<area shape="rect" id="Node000016" href="$class_player.html#a95157d5edc5a01129f5edef572c5b432" title="Gets the player&#39;s prison status." alt="" coords="158,715,290,741"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="68,638,101,666,143,694,169,706,166,711,140,698,98,670,64,642"/>
+<area shape="rect" id="Node000017" href="$class_player.html#ada1dfa2d5a58b0b2fb9fc3fdf363aca0" title="Gets the player&#39;s current money balance." alt="" coords="147,765,302,792"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="59,639,90,694,114,725,143,751,151,756,148,760,140,755,110,728,86,697,55,642"/>
+<area shape="rect" id="Node000018" href="$class_player.html#abb7f7730b59e826e548e72f9af3aacda" title="Gets whether the player is out of the game." alt="" coords="172,816,277,843"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="57,640,66,673,83,717,109,763,143,802,159,812,156,816,140,806,104,766,78,719,61,675,51,641"/>
+<area shape="rect" id="Node000019" href="$class_player.html#a86578410d347e59328294b9948bb7d90" title="Gets the player&#39;s current position on the game board." alt="" coords="159,867,290,893"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="55,640,62,681,77,738,103,800,121,828,144,853,148,856,144,860,140,857,117,831,98,802,72,740,56,682,50,641"/>
+<area shape="rect" id="Node000020" href="$class_dice.html#a612a16c434160895563d19099ca0b33b" title="Rolls the dice and returns a random number." alt="" coords="188,917,261,944"/>
+<area shape="poly" id="edge28_Node000001_Node000020" title=" " alt="" coords="54,640,58,690,71,760,82,799,97,837,118,872,143,903,157,914,174,921,171,925,155,918,140,907,113,875,93,839,77,801,65,762,52,690,48,641"/>
+<area shape="rect" id="Node000021" href="$class_case.html#a5a6729a6deb2c2b028a75a91ee77af37" title="Set whether the case can be purchased." alt="" coords="156,968,292,995"/>
+<area shape="poly" id="edge29_Node000001_Node000021" title=" " alt="" coords="53,640,54,698,65,782,76,828,92,874,114,916,144,954,147,957,143,961,140,958,110,919,87,876,70,829,59,783,49,698,48,641"/>
+<area shape="rect" id="Node000022" href="$class_case.html#ac28513949c90f96a1d40fdb935e4b749" title="Set the owner of the case." alt="" coords="159,1019,290,1045"/>
+<area shape="poly" id="edge30_Node000001_Node000022" title=" " alt="" coords="55,640,64,715,83,825,109,934,126,976,144,1005,148,1009,144,1013,140,1008,121,979,104,935,77,826,59,716,50,641"/>
+<area shape="rect" id="Node000023" href="$class_player.html#a8b37bd6a10ddfa6e835fb63eb30310df" title="Deducts money from the player&#39;s balance." alt="" coords="142,1069,307,1096"/>
+<area shape="poly" id="edge31_Node000001_Node000023" title=" " alt="" coords="55,640,63,724,80,849,92,914,106,974,124,1023,144,1056,146,1058,142,1062,140,1059,119,1025,101,975,87,915,74,850,57,725,49,641"/>
+<area shape="rect" id="Node000024" href="$class_player.html#aba90a5ef5644f625af16ca890e5bed36" title="Sets the player&#39;s prison status." alt="" coords="158,1120,290,1147"/>
+<area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="54,640,61,733,77,874,89,947,104,1014,122,1069,144,1106,147,1110,143,1113,140,1110,117,1071,98,1015,83,948,71,874,56,734,49,641"/>
+<area shape="rect" id="Node000025" href="$class_player.html#ad01242ffeea6100b6ee07bc945df934f" title="Sets the player&#39;s position on the game board." alt="" coords="159,1171,290,1197"/>
+<area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="54,640,59,742,74,897,85,979,101,1054,120,1115,131,1139,144,1157,148,1161,144,1165,140,1160,127,1142,115,1117,96,1055,80,980,68,898,54,742,49,641"/>
+<area shape="rect" id="Node000026" href="$class_case.html#a32c832b337bb360175f82268f45d8529" title="Set whether the case is sold." alt="" coords="167,1221,282,1248"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="54,640,58,750,71,921,82,1010,98,1093,118,1162,130,1188,144,1208,155,1218,152,1222,140,1211,126,1190,113,1163,93,1094,77,1011,65,921,52,750,48,640"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="227,460,242,418,267,361,304,300,327,271,353,246,359,242,362,246,357,250,331,275,309,303,272,364,247,420,232,462"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="230,459,275,384,311,338,353,298,363,292,365,296,357,302,314,342,279,387,235,462"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="235,459,283,407,317,377,354,350,366,343,368,348,356,354,320,381,287,411,239,463"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="248,458,354,403,373,394,375,399,356,408,251,463"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="288,458,361,442,362,447,290,463"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="304,477,359,481,358,486,303,483"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="263,486,376,529,374,534,261,491"/>
+<area shape="poly" id="edge13_Node000006_Node000014" title=" " alt="" coords="242,487,291,529,356,574,367,579,365,584,354,578,287,533,238,491"/>
+<area shape="poly" id="edge14_Node000006_Node000015" title=" " alt="" coords="236,487,282,552,317,591,357,625,364,629,361,634,353,629,313,595,278,556,232,490"/>
+</map>

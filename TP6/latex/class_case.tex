@@ -1,0 +1,501 @@
+\doxysection{Case Class Reference}
+\hypertarget{class_case}{}\label{class_case}\index{Case@{Case}}
+
+
+Represents a single case on the game board.  
+
+
+
+
+{\ttfamily \#include $<$Case.\+hpp$>$}
+
+
+
+Collaboration diagram for Case\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_case__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_case}{Case}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case_ac938fc1ddab753ad14d27a6cdab80b73}{Case}} (\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}} type\+Case, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur=\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{ROUGE}}, unsigned int taxe=0, unsigned int prix=0, bool achetable=false, bool vendu=false, \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}acheteur=nullptr, const char \texorpdfstring{$\ast$}{*}case\+Name="{}case not defined"{}, unsigned int maison=0, unsigned int hotel=0)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_case}{Case}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_case_a629a03411b3bdb803f48ba6f85828bd7}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{class_case_a0159fc224ee63c2fa3b865b510ff6fb9}{get\+Couleur}} () const
+\begin{DoxyCompactList}\small\item\em Get the color of the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_ae4e2ae971090c7d1e92e06e8dde1e146}{set\+Couleur}} (\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} couleur)
+\begin{DoxyCompactList}\small\item\em Set the color of the case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}} \mbox{\hyperlink{class_case_a718be72771b72bb820de3cc38101be27}{get\+Type\+Case}} () const
+\begin{DoxyCompactList}\small\item\em Get the type of the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a69168b201204e2c1f5b68b3f462aeb36}{set\+Type\+Case}} (\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}} type\+Case)
+\begin{DoxyCompactList}\small\item\em Set the type of the case. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_case_a2c87755861d97328b319825fb2810602}{get\+Taxe}} () const
+\begin{DoxyCompactList}\small\item\em Get the tax value for the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_adf7bf90a7ac32bbe7852e2f57fc9f16d}{set\+Taxe}} (unsigned int taxe)
+\begin{DoxyCompactList}\small\item\em Set the tax value for the case. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_case_a9e023d2c2ea0a23a6785077d24f2ff67}{get\+Prix}} () const
+\begin{DoxyCompactList}\small\item\em Get the purchase price of the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a4ed4a005fbaa16119350e650d2daa072}{set\+Prix}} (unsigned int prix)
+\begin{DoxyCompactList}\small\item\em Set the purchase price of the case. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_case_ab1a7655e73fe8f6a375adf2f0edbee1c}{is\+Achetable}} () const
+\begin{DoxyCompactList}\small\item\em Check if the case can be purchased. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a5a6729a6deb2c2b028a75a91ee77af37}{set\+Achetable}} (bool achetable)
+\begin{DoxyCompactList}\small\item\em Set whether the case can be purchased. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_case_a2e5526da0d8844014c86950fa8a33db1}{is\+Vendu}} () const
+\begin{DoxyCompactList}\small\item\em Check if the case has been sold. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a32c832b337bb360175f82268f45d8529}{set\+Vendu}} (bool vendu)
+\begin{DoxyCompactList}\small\item\em Set whether the case is sold. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_case_a60e8e3a5d1c70e7e26a7bb99ecabe0a6}{get\+Case\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the case. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_case_a4fc658cd0402223da783a7d7f987623e}{get\+Acheteur}} () const
+\begin{DoxyCompactList}\small\item\em Get the owner of the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_ac28513949c90f96a1d40fdb935e4b749}{set\+Acheteur}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}acheteur)
+\begin{DoxyCompactList}\small\item\em Set the owner of the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_ac6ce6c2e98c226c46058a9fe7f4a644a}{add\+House}} ()
+\begin{DoxyCompactList}\small\item\em Add a house to the case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a1fa15d4b3faafb3719481ff232f5139d}{add\+Motel}} ()
+\begin{DoxyCompactList}\small\item\em Add a hotel to the case. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_case_a9519c3c7f8408242e931e254cf9a574a}{get\+Number\+Of\+House}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of houses on the case. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_case_a1f335535489c295c85a704821098be60}{get\+Number\+Motel}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of hotels on the case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single case on the game board. 
+
+A case has properties such as type, color, ownership status, and building counts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_case_a14237e17aab1829965adab76b747db6c}\index{Case@{Case}!Case@{Case}}
+\index{Case@{Case}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{Case()}{Case()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_case_a14237e17aab1829965adab76b747db6c} 
+Case\+::\+Case (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor for \doxylink{class_case}{Case}. 
+
+Initializes the case with default values. \Hypertarget{class_case_ac938fc1ddab753ad14d27a6cdab80b73}\index{Case@{Case}!Case@{Case}}
+\index{Case@{Case}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{Case()}{Case()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_case_ac938fc1ddab753ad14d27a6cdab80b73} 
+Case\+::\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}}}]{type\+Case}{, }\item[{\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur}{ = {\ttfamily \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{ROUGE}}}, }\item[{unsigned int}]{taxe}{ = {\ttfamily 0}, }\item[{unsigned int}]{prix}{ = {\ttfamily 0}, }\item[{bool}]{achetable}{ = {\ttfamily false}, }\item[{bool}]{vendu}{ = {\ttfamily false}, }\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{acheteur}{ = {\ttfamily nullptr}, }\item[{const char \texorpdfstring{$\ast$}{*}}]{case\+Name}{ = {\ttfamily "{}case~not~defined"{}}, }\item[{unsigned int}]{maison}{ = {\ttfamily 0}, }\item[{unsigned int}]{hotel}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_case}{Case}. 
+
+Initializes a case with specific properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Case} & Type of the case. \\
+\hline
+{\em couleur} & Color group of the case. \\
+\hline
+{\em taxe} & Tax value for the case. \\
+\hline
+{\em prix} & Purchase price of the case. \\
+\hline
+{\em achetable} & Indicates if the case can be purchased. \\
+\hline
+{\em vendu} & Indicates if the case is sold. \\
+\hline
+{\em acheteur} & Pointer to the player who owns the case (if any). \\
+\hline
+{\em case\+Name} & Name of the case. \\
+\hline
+{\em maison} & Number of houses on the case. \\
+\hline
+{\em hotel} & Number of hotels on the case. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_case_ac6ce6c2e98c226c46058a9fe7f4a644a}\index{Case@{Case}!addHouse@{addHouse}}
+\index{addHouse@{addHouse}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{addHouse()}{addHouse()}}
+{\footnotesize\ttfamily \label{class_case_ac6ce6c2e98c226c46058a9fe7f4a644a} 
+void Case\+::add\+House (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Add a house to the case. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_case_ac6ce6c2e98c226c46058a9fe7f4a644a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a1fa15d4b3faafb3719481ff232f5139d}\index{Case@{Case}!addMotel@{addMotel}}
+\index{addMotel@{addMotel}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{addMotel()}{addMotel()}}
+{\footnotesize\ttfamily \label{class_case_a1fa15d4b3faafb3719481ff232f5139d} 
+void Case\+::add\+Motel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Add a hotel to the case. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_case_a1fa15d4b3faafb3719481ff232f5139d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a4fc658cd0402223da783a7d7f987623e}\index{Case@{Case}!getAcheteur@{getAcheteur}}
+\index{getAcheteur@{getAcheteur}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getAcheteur()}{getAcheteur()}}
+{\footnotesize\ttfamily \label{class_case_a4fc658cd0402223da783a7d7f987623e} 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} Case\+::get\+Acheteur (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the owner of the case. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the owner (\doxylink{class_player}{Player} object), or nullptr if unowned. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a4fc658cd0402223da783a7d7f987623e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a60e8e3a5d1c70e7e26a7bb99ecabe0a6}\index{Case@{Case}!getCaseName@{getCaseName}}
+\index{getCaseName@{getCaseName}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getCaseName()}{getCaseName()}}
+{\footnotesize\ttfamily \label{class_case_a60e8e3a5d1c70e7e26a7bb99ecabe0a6} 
+std\+::string Case\+::get\+Case\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the case. 
+
+\begin{DoxyReturn}{Returns}
+The name of the case. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a60e8e3a5d1c70e7e26a7bb99ecabe0a6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a0159fc224ee63c2fa3b865b510ff6fb9}\index{Case@{Case}!getCouleur@{getCouleur}}
+\index{getCouleur@{getCouleur}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getCouleur()}{getCouleur()}}
+{\footnotesize\ttfamily \label{class_case_a0159fc224ee63c2fa3b865b510ff6fb9} 
+\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} Case\+::get\+Couleur (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the color of the case. 
+
+\begin{DoxyReturn}{Returns}
+The color of the case. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a0159fc224ee63c2fa3b865b510ff6fb9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a629a03411b3bdb803f48ba6f85828bd7}\index{Case@{Case}!getName@{getName}}
+\index{getName@{getName}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_case_a629a03411b3bdb803f48ba6f85828bd7} 
+std\+::string Case\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the case. 
+
+\begin{DoxyReturn}{Returns}
+The name of the case. 
+\end{DoxyReturn}
+\Hypertarget{class_case_a1f335535489c295c85a704821098be60}\index{Case@{Case}!getNumberMotel@{getNumberMotel}}
+\index{getNumberMotel@{getNumberMotel}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getNumberMotel()}{getNumberMotel()}}
+{\footnotesize\ttfamily \label{class_case_a1f335535489c295c85a704821098be60} 
+unsigned int Case\+::get\+Number\+Motel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the number of hotels on the case. 
+
+\begin{DoxyReturn}{Returns}
+The number of hotels. 
+\end{DoxyReturn}
+\Hypertarget{class_case_a9519c3c7f8408242e931e254cf9a574a}\index{Case@{Case}!getNumberOfHouse@{getNumberOfHouse}}
+\index{getNumberOfHouse@{getNumberOfHouse}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getNumberOfHouse()}{getNumberOfHouse()}}
+{\footnotesize\ttfamily \label{class_case_a9519c3c7f8408242e931e254cf9a574a} 
+unsigned int Case\+::get\+Number\+Of\+House (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the number of houses on the case. 
+
+\begin{DoxyReturn}{Returns}
+The number of houses. 
+\end{DoxyReturn}
+\Hypertarget{class_case_a9e023d2c2ea0a23a6785077d24f2ff67}\index{Case@{Case}!getPrix@{getPrix}}
+\index{getPrix@{getPrix}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getPrix()}{getPrix()}}
+{\footnotesize\ttfamily \label{class_case_a9e023d2c2ea0a23a6785077d24f2ff67} 
+unsigned int Case\+::get\+Prix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the purchase price of the case. 
+
+\begin{DoxyReturn}{Returns}
+The purchase price. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a9e023d2c2ea0a23a6785077d24f2ff67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a2c87755861d97328b319825fb2810602}\index{Case@{Case}!getTaxe@{getTaxe}}
+\index{getTaxe@{getTaxe}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getTaxe()}{getTaxe()}}
+{\footnotesize\ttfamily \label{class_case_a2c87755861d97328b319825fb2810602} 
+unsigned int Case\+::get\+Taxe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the tax value for the case. 
+
+\begin{DoxyReturn}{Returns}
+The tax value. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a2c87755861d97328b319825fb2810602_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a718be72771b72bb820de3cc38101be27}\index{Case@{Case}!getTypeCase@{getTypeCase}}
+\index{getTypeCase@{getTypeCase}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getTypeCase()}{getTypeCase()}}
+{\footnotesize\ttfamily \label{class_case_a718be72771b72bb820de3cc38101be27} 
+\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}} Case\+::get\+Type\+Case (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the type of the case. 
+
+\begin{DoxyReturn}{Returns}
+The type of the case. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a718be72771b72bb820de3cc38101be27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_ab1a7655e73fe8f6a375adf2f0edbee1c}\index{Case@{Case}!isAchetable@{isAchetable}}
+\index{isAchetable@{isAchetable}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{isAchetable()}{isAchetable()}}
+{\footnotesize\ttfamily \label{class_case_ab1a7655e73fe8f6a375adf2f0edbee1c} 
+bool Case\+::is\+Achetable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Check if the case can be purchased. 
+
+\begin{DoxyReturn}{Returns}
+True if the case is purchasable, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_ab1a7655e73fe8f6a375adf2f0edbee1c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a2e5526da0d8844014c86950fa8a33db1}\index{Case@{Case}!isVendu@{isVendu}}
+\index{isVendu@{isVendu}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{isVendu()}{isVendu()}}
+{\footnotesize\ttfamily \label{class_case_a2e5526da0d8844014c86950fa8a33db1} 
+bool Case\+::is\+Vendu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Check if the case has been sold. 
+
+\begin{DoxyReturn}{Returns}
+True if the case is sold, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_case_a2e5526da0d8844014c86950fa8a33db1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_a5a6729a6deb2c2b028a75a91ee77af37}\index{Case@{Case}!setAchetable@{setAchetable}}
+\index{setAchetable@{setAchetable}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setAchetable()}{setAchetable()}}
+{\footnotesize\ttfamily \label{class_case_a5a6729a6deb2c2b028a75a91ee77af37} 
+void Case\+::set\+Achetable (\begin{DoxyParamCaption}\item[{bool}]{achetable}{}\end{DoxyParamCaption})}
+
+
+
+Set whether the case can be purchased. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em achetable} & True if the case can be purchased, false otherwise. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_case_a5a6729a6deb2c2b028a75a91ee77af37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_ac28513949c90f96a1d40fdb935e4b749}\index{Case@{Case}!setAcheteur@{setAcheteur}}
+\index{setAcheteur@{setAcheteur}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setAcheteur()}{setAcheteur()}}
+{\footnotesize\ttfamily \label{class_case_ac28513949c90f96a1d40fdb935e4b749} 
+void Case\+::set\+Acheteur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{acheteur}{}\end{DoxyParamCaption})}
+
+
+
+Set the owner of the case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em acheteur} & Pointer to the new owner (\doxylink{class_player}{Player} object). \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_case_ac28513949c90f96a1d40fdb935e4b749_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_case_ae4e2ae971090c7d1e92e06e8dde1e146}\index{Case@{Case}!setCouleur@{setCouleur}}
+\index{setCouleur@{setCouleur}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setCouleur()}{setCouleur()}}
+{\footnotesize\ttfamily \label{class_case_ae4e2ae971090c7d1e92e06e8dde1e146} 
+void Case\+::set\+Couleur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{couleur}{}\end{DoxyParamCaption})}
+
+
+
+Set the color of the case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & The new color for the case. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_a4ed4a005fbaa16119350e650d2daa072}\index{Case@{Case}!setPrix@{setPrix}}
+\index{setPrix@{setPrix}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setPrix()}{setPrix()}}
+{\footnotesize\ttfamily \label{class_case_a4ed4a005fbaa16119350e650d2daa072} 
+void Case\+::set\+Prix (\begin{DoxyParamCaption}\item[{unsigned int}]{prix}{}\end{DoxyParamCaption})}
+
+
+
+Set the purchase price of the case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prix} & The new purchase price. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_adf7bf90a7ac32bbe7852e2f57fc9f16d}\index{Case@{Case}!setTaxe@{setTaxe}}
+\index{setTaxe@{setTaxe}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setTaxe()}{setTaxe()}}
+{\footnotesize\ttfamily \label{class_case_adf7bf90a7ac32bbe7852e2f57fc9f16d} 
+void Case\+::set\+Taxe (\begin{DoxyParamCaption}\item[{unsigned int}]{taxe}{}\end{DoxyParamCaption})}
+
+
+
+Set the tax value for the case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taxe} & The new tax value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_a69168b201204e2c1f5b68b3f462aeb36}\index{Case@{Case}!setTypeCase@{setTypeCase}}
+\index{setTypeCase@{setTypeCase}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setTypeCase()}{setTypeCase()}}
+{\footnotesize\ttfamily \label{class_case_a69168b201204e2c1f5b68b3f462aeb36} 
+void Case\+::set\+Type\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}}}]{type\+Case}{}\end{DoxyParamCaption})}
+
+
+
+Set the type of the case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Case} & The new type for the case. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_a32c832b337bb360175f82268f45d8529}\index{Case@{Case}!setVendu@{setVendu}}
+\index{setVendu@{setVendu}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setVendu()}{setVendu()}}
+{\footnotesize\ttfamily \label{class_case_a32c832b337bb360175f82268f45d8529} 
+void Case\+::set\+Vendu (\begin{DoxyParamCaption}\item[{bool}]{vendu}{}\end{DoxyParamCaption})}
+
+
+
+Set whether the case is sold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendu} & True if the case is sold, false otherwise. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_case_a32c832b337bb360175f82268f45d8529_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_case_8hpp}{Case.\+hpp}}\item 
+\mbox{\hyperlink{_case_8cpp}{Case.\+cpp}}\end{DoxyCompactItemize}

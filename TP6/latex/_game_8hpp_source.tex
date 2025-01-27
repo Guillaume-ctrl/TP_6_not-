@@ -1,0 +1,42 @@
+\doxysection{Game.\+hpp}
+\hypertarget{_game_8hpp_source}{}\label{_game_8hpp_source}\mbox{\hyperlink{_game_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8hpp}{Player.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_case_8hpp}{Case.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{extern}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}*\ \mbox{\hyperlink{_game_8cpp_a420abd2f97197026d10d86089521ea74}{GGame}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_a0602230d90b8ce5df2a684bb7384d85e}{addPlayer}}(\textcolor{keyword}{const}\ std::string\&\ playerName);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_a7e30d89497a95962ec84bba48f386a4e}{canStart}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}{start}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_aa333825d0bca80e91e53c7e23f053405}{play}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a4333ad0cd81117a3aace3fcbca66c457}{checkPlayer}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_aaeb75e34b08fc8994d9b21af204e3984}{hasEnded}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ac8ca4cf23602c2065fa05b52c99535e1}{displayInfoCase}}(\mbox{\hyperlink{class_case}{Case}}*\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ \mbox{\hyperlink{class_game_a191a71f977d7eb86c0d5390ed14e205e}{getBank}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ m\_bank;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ std::vector<Player*>\ m\_player\_list;\ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_house\_count;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_hotel\_count;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_current\_player;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00110\ \};}
+
+\end{DoxyCode}

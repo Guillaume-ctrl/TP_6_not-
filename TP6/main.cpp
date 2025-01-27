@@ -1,16 +1,30 @@
 #include <iostream>
 #include "Game.hpp"
-#include "Start.hpp"
-#include "Land.hpp"
+#include "Dice.hpp"
+#include "Case.hpp"
 
-
-int main() 
+int main()
 {
-    GGame = new Game;
+    GGame = new Game();
 
-    GGame->start();
-    Case* dernier = new Start();
-    dernier = new Land();
+    while (true)
+    {
+        try {
+            GGame->play();
+            GGame->checkPlayer();
+            if (GGame->hasEnded()) break;
+        } 
+        catch (const std::runtime_error& e) {
+            std::cerr << "Runtime Error: " << e.what() << std::endl;
+
+        }
+        catch (const std::exception& e) {
+            std::cerr << "Error: " << e.what() << std::endl;
+
+        }
+    }
+    
+    std::cout << "The Game Has Ended!";
 
     delete GGame;
     return 0;

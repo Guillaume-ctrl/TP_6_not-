@@ -1,0 +1,10 @@
+<map id="Player::getName" name="Player::getName">
+<area shape="rect" id="Node000001" title="Gets the player&#39;s name." alt="" coords="348,56,467,83"/>
+<area shape="rect" id="Node000002" href="$class_game.html#a4333ad0cd81117a3aace3fcbca66c457" title="Checks the status of the current player." alt="" coords="153,5,289,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,54,272,35,274,30,342,49"/>
+<area shape="rect" id="Node000003" href="$class_game.html#ac8ca4cf23602c2065fa05b52c99535e1" title="Displays information about a specific case on the board." alt="" coords="142,56,300,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,72,301,72,301,67,332,67"/>
+<area shape="rect" id="Node000004" href="$class_game.html#aa333825d0bca80e91e53c7e23f053405" title="Executes the main game loop for the current player&#39;s turn." alt="" coords="5,81,94,108"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="345,89,300,97,189,103,94,100,94,95,189,98,300,92,344,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,86,94,91,94,86,126,81"/>
+</map>

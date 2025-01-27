@@ -1,0 +1,134 @@
+\doxysection{Case.\+hpp}
+\hypertarget{_case_8hpp_source}{}\label{_case_8hpp_source}\mbox{\hyperlink{_case_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8hpp}{Player.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a49ab6da9e5945a0af27ee598df5d5520}{NO\_COLOR}}\ =\ -\/1,\ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{ROUGE}}\ =\ 0x00,\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a1b592b20aeb91b073f8f249231622230}{BLEU}}\ =\ 0x01,\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a872f25d993d14344612468278683d050}{CIAN}}\ =\ 0x02,\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a14aeed4d25cc6ce52191b46c1d73af92}{VERT}}\ =\ 0x03,\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a75c57e168c898879ae7e74fcaa887717}{MAUVE}}\ =\ 0x04,\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a5213e01e808cbbf8f0c2c7d9bd7264c8}{ROSE}}\ =\ 0x05,\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}}\ =\ 0x06,\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1}{JAUNE}}\ =\ 0x07\ \ }
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{CaseType}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea90e38de572c631f80a5ec307a636ab19}{TERRAIN\_GARE\_SERVICE\_PUBLIC}}\ =\ 0x00,\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea81d2bb6df05f24d8afc01889a493875c}{CHANCE}}\ =\ 0x01,\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ead7fc3494886110246e5385c59c9d3505}{CAISSE\_DE\_COMMU}}\ =\ 0x02,\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea5bc97d9e6b422a79ba17961624314fd4}{TAXE\_DE\_LUXE}}\ =\ 0x03,\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabffa83cf654a02772eb472b536e4eb8e}{DEPART}}\ =\ 0x04,\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab8ca1cb58bab130fe3cccca278123685}{IMPOT\_SUR\_LE\_REVENU}}\ =\ 0x05,\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea50c940053b461efcf12693e93b4421d9}{ALLER\_EN\_PRISON}}\ =\ 0x06,\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabc9ce8a7d0fdcc7a98b223d7fd2783f0}{SIMPLE\_VISITE}}\ =\ 0x07,\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea729e93d064cf1a2a211d19e686ae3953}{PRISON}}\ =\ 0x08,\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab7a6459deb364f1db6fe59b617ac0ba4}{PARC\_GRATUIT}}\ =\ 0x09\ \ }
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ \mbox{\hyperlink{struct_color_house_count_abb73e3d63c1471c96b14e8e2cce6f5ee}{color}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_color_house_count_a1ac338c32d1a172f9fb8ddc246fce659}{terrainCount}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_color_house_count_a60f7c8c4a36efe9dceacb55bc4d3fad9}{hasHotel}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_color_house_count_a650f41d705ee9095dca8a9f4fff48780}{maxNumberOfTerrain}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_color_house_count_a152740f183ccadf444a013b67e2cf90d}{houseCount}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{comment}{//\ External\ color\ group\ tracking\ variables}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_add3199ed19de73eb8c2dea31715cab8b}{redGroup}};}
+\DoxyCodeLine{00060\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_a4ee66bd3680dff19bb1b3cf939468356}{blueGroup}};}
+\DoxyCodeLine{00061\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_a202ce8515e39453b0f1bd560813a3bb5}{cyanGroup}};}
+\DoxyCodeLine{00062\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_a5e07ff75141aa98fce031e9673455e10}{greenGroup}};}
+\DoxyCodeLine{00063\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_aa5474b6b059ef5d75276c76a6864d2e2}{mauveGroup}};}
+\DoxyCodeLine{00064\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_a73b13e5b0a60ac626548cc9ae093b7f6}{pinkGroup}};}
+\DoxyCodeLine{00065\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_a599157363622312cf2c84b361e3b982e}{orangeGroup}};}
+\DoxyCodeLine{00066\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_color_house_count}{ColorHouseCount}}\ \mbox{\hyperlink{_case_8cpp_af893d3a25723b59995049919e0a7761b}{yellowGroup}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{extern}\ std::vector<ColorHouseCount>\ \mbox{\hyperlink{_case_8cpp_a5a055492f62958ae9136ef20a96b4830}{allGroups}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ TAILLE\_PLATEAU\ 40\ }}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}}\ \{}
+\DoxyCodeLine{00079\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}}()}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ :\ m\_typeCase(\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabffa83cf654a02772eb472b536e4eb8e}{DEPART}}),\ m\_couleur(\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{ROUGE}}),\ m\_taxe(0),\ m\_prix(0),}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ m\_achetable(false),\ m\_vendu(false),\ m\_acheteur(nullptr),}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ m\_caseName(\textcolor{stringliteral}{"{}case\ not\ defined"{}}),\ m\_numberOfHouse(0),\ m\_numberMotel(0)\ \{\}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}}(\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{CaseType}}\ typeCase,}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ couleur\ =\ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{ROUGE}},}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ taxe\ =\ 0,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ prix\ =\ 0,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ achetable\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ vendu\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ acheteur\ =\ \textcolor{keyword}{nullptr},}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ caseName\ =\ \textcolor{stringliteral}{"{}case\ not\ defined"{}},}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ maison\ =\ 0,}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ hotel\ =\ 0);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00121\ \ \ \ \ std::string\ \mbox{\hyperlink{class_case_a629a03411b3bdb803f48ba6f85828bd7}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{comment}{//\ Getter\ and\ Setter\ methods}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00129\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ \mbox{\hyperlink{class_case_a0159fc224ee63c2fa3b865b510ff6fb9}{getCouleur}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_ae4e2ae971090c7d1e92e06e8dde1e146}{setCouleur}}(\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ couleur);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{CaseType}}\ \mbox{\hyperlink{class_case_a718be72771b72bb820de3cc38101be27}{getTypeCase}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_a69168b201204e2c1f5b68b3f462aeb36}{setTypeCase}}(\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{CaseType}}\ typeCase);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_a2c87755861d97328b319825fb2810602}{getTaxe}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_adf7bf90a7ac32bbe7852e2f57fc9f16d}{setTaxe}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ taxe);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_a9e023d2c2ea0a23a6785077d24f2ff67}{getPrix}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_a4ed4a005fbaa16119350e650d2daa072}{setPrix}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ prix);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_case_ab1a7655e73fe8f6a375adf2f0edbee1c}{isAchetable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_a5a6729a6deb2c2b028a75a91ee77af37}{setAchetable}}(\textcolor{keywordtype}{bool}\ achetable);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_case_a2e5526da0d8844014c86950fa8a33db1}{isVendu}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_a32c832b337bb360175f82268f45d8529}{setVendu}}(\textcolor{keywordtype}{bool}\ vendu);}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00201\ \ \ \ \ std::string\ \mbox{\hyperlink{class_case_a60e8e3a5d1c70e7e26a7bb99ecabe0a6}{getCaseName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00207\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ \mbox{\hyperlink{class_case_a4fc658cd0402223da783a7d7f987623e}{getAcheteur}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_ac28513949c90f96a1d40fdb935e4b749}{setAcheteur}}(\mbox{\hyperlink{class_player}{Player}}*\ acheteur);}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_ac6ce6c2e98c226c46058a9fe7f4a644a}{addHouse}}();}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_a1fa15d4b3faafb3719481ff232f5139d}{addMotel}}();}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_a9519c3c7f8408242e931e254cf9a574a}{getNumberOfHouse}}();}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_a1f335535489c295c85a704821098be60}{getNumberMotel}}();}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}\ m\_couleur;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00239\ \ \ \ \ \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{CaseType}}\ m\_typeCase;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_taxe;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_prix;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00242\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_achetable;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_vendu;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ m\_acheteur;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00245\ \ \ \ \ std::string\ m\_caseName;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_numberOfHouse;\ \ \ \ \ }
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_numberMotel;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00248\ \};}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \textcolor{comment}{//\ External\ declarations}}
+\DoxyCodeLine{00251\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_case}{Case}}\ \mbox{\hyperlink{_case_8cpp_a468887f386ff2ee00a8c64d791bee1d2}{plateau}}[\mbox{\hyperlink{_case_8hpp_adc3c2556e84bebbe78c8a87fc459a6f8}{TAILLE\_PLATEAU}}];}
+\DoxyCodeLine{00252\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_case}{Case}}\ \mbox{\hyperlink{_case_8cpp_ae65b2918b8bc888610dc952a2ba1319f}{Prison}};}
+
+\end{DoxyCode}

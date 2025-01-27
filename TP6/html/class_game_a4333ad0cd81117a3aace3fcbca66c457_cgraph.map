@@ -1,0 +1,11 @@
+<map id="Game::checkPlayer" name="Game::checkPlayer">
+<area shape="rect" id="Node000001" title="Checks the status of the current player." alt="" coords="5,81,142,108"/>
+<area shape="rect" id="Node000002" href="$class_player.html#ada1dfa2d5a58b0b2fb9fc3fdf363aca0" title="Gets the player&#39;s current money balance." alt="" coords="190,5,345,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,78,189,42,207,35,209,40,191,46,105,83"/>
+<area shape="rect" id="Node000003" href="$class_player.html#a73e4ff2d70e62ca7e3be1d9b4ad9de85" title="Gets the player&#39;s name." alt="" coords="208,56,327,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,83,192,76,193,82,143,88"/>
+<area shape="rect" id="Node000004" href="$class_player.html#abb7f7730b59e826e548e72f9af3aacda" title="Gets whether the player is out of the game." alt="" coords="215,107,320,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,101,200,109,199,114,142,106"/>
+<area shape="rect" id="Node000005" href="$class_player.html#a79a872960539bd4b3b01f99cef9802ee" title="Sets whether the player is out of the game." alt="" coords="215,157,320,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="105,106,191,143,209,149,207,154,189,148,103,111"/>
+</map>

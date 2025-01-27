@@ -1,0 +1,25 @@
+\doxysection{Dice.\+hpp}
+\hypertarget{_dice_8hpp_source}{}\label{_dice_8hpp_source}\mbox{\hyperlink{_dice_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DICE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DICE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dice_ad968fe4b8fa6ce730d3a2fcaf44d4b50}{Dice}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_dice_ad968fe4b8fa6ce730d3a2fcaf44d4b50}{Dice}}(\textcolor{keywordtype}{int}\ sides\ =\ 6);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_dice_a612a16c434160895563d19099ca0b33b}{roll}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_sides;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ std::mt19937\ m\_rng;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ std::uniform\_int\_distribution<int>\ m\_distribution;\ }
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{extern}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dice}{Dice}}\ \mbox{\hyperlink{_dice_8cpp_ae64bc4662249ecb76676e309e658c743}{DDice}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DICE\_H}}
+
+\end{DoxyCode}

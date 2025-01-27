@@ -1,0 +1,7 @@
+<map id="Player::addMoney" name="Player::addMoney">
+<area shape="rect" id="Node000001" title="Adds money to the player&#39;s balance." alt="" coords="178,31,304,57"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a5ed6e187ab571f2f0159b2d8113f1702" title="Transfers money from this player to another player." alt="" coords="5,5,130,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,35,130,30,130,25,163,30"/>
+<area shape="rect" id="Node000003" href="$class_game.html#aa333825d0bca80e91e53c7e23f053405" title="Executes the main game loop for the current player&#39;s turn." alt="" coords="23,56,112,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,58,112,66,112,60,162,53"/>
+</map>

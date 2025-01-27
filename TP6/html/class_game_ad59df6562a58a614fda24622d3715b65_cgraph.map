@@ -1,0 +1,5 @@
+<map id="Game::Game" name="Game::Game">
+<area shape="rect" id="Node000001" title="Constructor for the Game class." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="Node000002" href="$class_game.html#a0602230d90b8ce5df2a684bb7384d85e" title="Adds a player to the game." alt="" coords="153,5,275,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,16,137,16,137,21,105,21"/>
+</map>

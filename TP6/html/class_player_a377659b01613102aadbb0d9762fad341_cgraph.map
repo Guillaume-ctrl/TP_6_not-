@@ -1,0 +1,5 @@
+<map id="Player::exchangeCard" name="Player::exchangeCard">
+<area shape="rect" id="Node000001" title="Exchanges a card with another player." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="Node000002" href="$class_player.html#a45fa04a2a4ff9235e6c100b7c6ab232a" title="Constructor for the Player class." alt="" coords="204,5,307,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>

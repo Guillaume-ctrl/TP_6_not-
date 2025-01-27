@@ -15,34 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+	  <ClCompile Include="main.cpp">
+		  <Filter>Source Files</Filter>
+	  </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Land.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Chance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+	  <ClCompile Include="Dice.cpp">
+		  <Filter>Source Files</Filter>
+	  </ClCompile>
     <ClCompile Include="Case.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Start.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IRS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Heps.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Park.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,25 +38,13 @@
     <ClInclude Include="Game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Land.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Player.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Chance.hpp">
+	<ClInclude Include="Dice.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Start.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IRS.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Heps.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Park.hpp">
+	  <ClInclude Include="Bank.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

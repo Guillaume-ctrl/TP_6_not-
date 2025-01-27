@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Bank.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Bank.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Case.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Case.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Case.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5AE490A2-62C1-4E8D-8C18-E0A93CEB5B9E}|Nword.vcxproj|solutionrelative:Case.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 191,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Case.hpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Case.hpp",
+              "RelativeDocumentMoniker": "Case.hpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Case.hpp",
+              "RelativeToolTip": "Case.hpp",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAIAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T18:18:36.199Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-26T18:18:46.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAEAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-26T18:18:42.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.hpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Player.hpp",
+              "RelativeDocumentMoniker": "Player.hpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Player.hpp",
+              "RelativeToolTip": "Player.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T18:18:40.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Case.cpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Case.cpp",
+              "RelativeDocumentMoniker": "Case.cpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Case.cpp",
+              "RelativeToolTip": "Case.cpp",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAG8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-26T18:18:37.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.hpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Game.hpp",
+              "RelativeDocumentMoniker": "Game.hpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Game.hpp",
+              "RelativeToolTip": "Game.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T18:18:33.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Game.cpp",
+              "RelativeDocumentMoniker": "Game.cpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Game.cpp",
+              "RelativeToolTip": "Game.cpp",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-26T18:17:57.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bank.hpp",
+              "DocumentMoniker": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Bank.hpp",
+              "RelativeDocumentMoniker": "Bank.hpp",
+              "ToolTip": "C:\\Users\\guill\\Documents\\COURS_ECN\\CPP\\TP6-NOTE\\TP_6_not-\\TP6\\Bank.hpp",
+              "RelativeToolTip": "Bank.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T18:18:11.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

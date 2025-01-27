@@ -1,0 +1,244 @@
+\doxysection{Game Class Reference}
+\hypertarget{class_game}{}\label{class_game}\index{Game@{Game}}
+
+
+Main \doxylink{class_game}{Game} class used to manage the gameplay loop, players, and game state.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+hpp$>$}
+
+
+
+Collaboration diagram for Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_game}{Game} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\texorpdfstring{$\sim$}{\string~}\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_game}{Game} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_a0602230d90b8ce5df2a684bb7384d85e}{add\+Player}} (const std\+::string \&player\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a player to the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_a7e30d89497a95962ec84bba48f386a4e}{can\+Start}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the game is ready to start. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}{start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_aa333825d0bca80e91e53c7e23f053405}{play}} ()
+\begin{DoxyCompactList}\small\item\em Executes the main game loop for the current player\textquotesingle{}s turn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a4333ad0cd81117a3aace3fcbca66c457}{check\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Checks the status of the current player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_aaeb75e34b08fc8994d9b21af204e3984}{has\+Ended}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the game has ended. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ac8ca4cf23602c2065fa05b52c99535e1}{display\+Info\+Case}} (\mbox{\hyperlink{class_case}{Case}} \texorpdfstring{$\ast$}{*}c) const
+\begin{DoxyCompactList}\small\item\em Displays information about a specific case on the board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_game_a191a71f977d7eb86c0d5390ed14e205e}{get\+Bank}} () const
+\begin{DoxyCompactList}\small\item\em Gets the bank object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main \doxylink{class_game}{Game} class used to manage the gameplay loop, players, and game state. 
+
+The \doxylink{class_game}{Game} class is responsible for handling the current player turn, managing houses and hotels, and coordinating player actions. It also includes methods to start and play the game, check player status, and display information about cases on the board. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \label{class_game_ad59df6562a58a614fda24622d3715b65} 
+Game\+::\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_game}{Game} class. 
+
+Initializes the game with default values, including setting up the bank and player list. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_game_ad59df6562a58a614fda24622d3715b65_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\index{Game@{Game}!````~Game@{\texorpdfstring{$\sim$}{\string~}Game}}
+\index{````~Game@{\texorpdfstring{$\sim$}{\string~}Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Game()}{\string~Game()}}
+{\footnotesize\ttfamily \label{class_game_ae3d112ca6e0e55150d2fdbc704474530} 
+Game\+::\texorpdfstring{$\sim$}{\string~}\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_game}{Game} class. 
+
+Cleans up resources, including deleting dynamically allocated players. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_a0602230d90b8ce5df2a684bb7384d85e}\index{Game@{Game}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}}
+{\footnotesize\ttfamily \label{class_game_a0602230d90b8ce5df2a684bb7384d85e} 
+bool Game\+::add\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{player\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Adds a player to the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Name} & The name of the player to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player was added successfully, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_game_a0602230d90b8ce5df2a684bb7384d85e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_a7e30d89497a95962ec84bba48f386a4e}\index{Game@{Game}!canStart@{canStart}}
+\index{canStart@{canStart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{canStart()}{canStart()}}
+{\footnotesize\ttfamily \label{class_game_a7e30d89497a95962ec84bba48f386a4e} 
+bool Game\+::can\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the game is ready to start. 
+
+A game can start if there are enough players added.
+
+\begin{DoxyReturn}{Returns}
+True if the game can start, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_game_a4333ad0cd81117a3aace3fcbca66c457}\index{Game@{Game}!checkPlayer@{checkPlayer}}
+\index{checkPlayer@{checkPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{checkPlayer()}{checkPlayer()}}
+{\footnotesize\ttfamily \label{class_game_a4333ad0cd81117a3aace3fcbca66c457} 
+void Game\+::check\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks the status of the current player. 
+
+Determines whether the player is still in the game or needs to be removed. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_game_a4333ad0cd81117a3aace3fcbca66c457_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_ac8ca4cf23602c2065fa05b52c99535e1}\index{Game@{Game}!displayInfoCase@{displayInfoCase}}
+\index{displayInfoCase@{displayInfoCase}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{displayInfoCase()}{displayInfoCase()}}
+{\footnotesize\ttfamily \label{class_game_ac8ca4cf23602c2065fa05b52c99535e1} 
+void Game\+::display\+Info\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_case}{Case}} \texorpdfstring{$\ast$}{*}}]{c}{}\end{DoxyParamCaption}) const}
+
+
+
+Displays information about a specific case on the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The case to display information about. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_game_ac8ca4cf23602c2065fa05b52c99535e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_game_ac8ca4cf23602c2065fa05b52c99535e1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_a191a71f977d7eb86c0d5390ed14e205e}\index{Game@{Game}!getBank@{getBank}}
+\index{getBank@{getBank}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBank()}{getBank()}}
+{\footnotesize\ttfamily \label{class_game_a191a71f977d7eb86c0d5390ed14e205e} 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} Game\+::get\+Bank (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the bank object. 
+
+The bank is a special player that manages money and properties not owned by regular players.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the bank player. 
+\end{DoxyReturn}
+\Hypertarget{class_game_aaeb75e34b08fc8994d9b21af204e3984}\index{Game@{Game}!hasEnded@{hasEnded}}
+\index{hasEnded@{hasEnded}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{hasEnded()}{hasEnded()}}
+{\footnotesize\ttfamily \label{class_game_aaeb75e34b08fc8994d9b21af204e3984} 
+bool Game\+::has\+Ended (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the game has ended. 
+
+The game ends when only one player remains.
+
+\begin{DoxyReturn}{Returns}
+True if the game has ended, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_game_aaeb75e34b08fc8994d9b21af204e3984_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_aa333825d0bca80e91e53c7e23f053405}\index{Game@{Game}!play@{play}}
+\index{play@{play}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_game_aa333825d0bca80e91e53c7e23f053405} 
+void Game\+::play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executes the main game loop for the current player\textquotesingle{}s turn. 
+
+Handles the player\textquotesingle{}s actions, dice rolls, and case interactions. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_game_aa333825d0bca80e91e53c7e23f053405_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}\index{Game@{Game}!start@{start}}
+\index{start@{start}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90} 
+void Game\+::start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Starts the game. 
+
+This method initializes the game state and prepares for the first turn. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_8hpp}{Game.\+hpp}}\item 
+\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

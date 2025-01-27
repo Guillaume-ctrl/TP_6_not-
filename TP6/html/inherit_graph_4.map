@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_player.html" title="Represents a player in the game." alt="" coords="5,5,64,32"/>
+<area shape="rect" id="Node000001" href="$class_bank.html" title="A generic class to manage a bank&#39;s money operations." alt="" coords="112,5,194,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="79,16,111,16,111,21,79,21"/>
+</map>

@@ -129,26 +129,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Case.cpp" />
-    <ClCompile Include="Chance.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Heps.cpp" />
-    <ClCompile Include="IRS.cpp" />
-    <ClCompile Include="Land.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Park.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Start.cpp" />
+    <ClCompile Include="Dice.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Case.hpp" />
-    <ClInclude Include="Chance.hpp" />
     <ClInclude Include="Game.hpp" />
-    <ClInclude Include="Heps.hpp" />
-    <ClInclude Include="IRS.hpp" />
-    <ClInclude Include="Land.hpp" />
-    <ClInclude Include="Park.hpp" />
     <ClInclude Include="Player.hpp" />
-    <ClInclude Include="Start.hpp" />
+    <ClInclude Include="Dice.hpp" />
+    <ClInclude Include="Bank.hpp" />
+	  
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

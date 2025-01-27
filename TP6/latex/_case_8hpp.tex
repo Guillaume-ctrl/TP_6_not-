@@ -1,0 +1,275 @@
+\doxysection{Case.\+hpp File Reference}
+\hypertarget{_case_8hpp}{}\label{_case_8hpp}\index{Case.hpp@{Case.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}Player.\+hpp"{}}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for Case.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{_case_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{_case_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}}
+\begin{DoxyCompactList}\small\item\em Tracks house and hotel counts for a specific color group. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_case}{Case}}
+\begin{DoxyCompactList}\small\item\em Represents a single case on the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_case_8hpp_adc3c2556e84bebbe78c8a87fc459a6f8}{TAILLE\+\_\+\+PLATEAU}}~40
+\begin{DoxyCompactList}\small\item\em Number of cases on the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \{ \newline
+\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a49ab6da9e5945a0af27ee598df5d5520}{NO\+\_\+\+COLOR}} = -\/1
+, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}{ROUGE}} = 0x00
+, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a1b592b20aeb91b073f8f249231622230}{BLEU}} = 0x01
+, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a872f25d993d14344612468278683d050}{CIAN}} = 0x02
+, \newline
+\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a14aeed4d25cc6ce52191b46c1d73af92}{VERT}} = 0x03
+, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a75c57e168c898879ae7e74fcaa887717}{MAUVE}} = 0x04
+, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a5213e01e808cbbf8f0c2c7d9bd7264c8}{ROSE}} = 0x05
+, \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}} = 0x06
+, \newline
+\mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1}{JAUNE}} = 0x07
+ \}
+\begin{DoxyCompactList}\small\item\em Base class for a game board case. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}} \{ \newline
+\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea90e38de572c631f80a5ec307a636ab19}{TERRAIN\+\_\+\+GARE\+\_\+\+SERVICE\+\_\+\+PUBLIC}} = 0x00
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea81d2bb6df05f24d8afc01889a493875c}{CHANCE}} = 0x01
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ead7fc3494886110246e5385c59c9d3505}{CAISSE\+\_\+\+DE\+\_\+\+COMMU}} = 0x02
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea5bc97d9e6b422a79ba17961624314fd4}{TAXE\+\_\+\+DE\+\_\+\+LUXE}} = 0x03
+, \newline
+\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabffa83cf654a02772eb472b536e4eb8e}{DEPART}} = 0x04
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab8ca1cb58bab130fe3cccca278123685}{IMPOT\+\_\+\+SUR\+\_\+\+LE\+\_\+\+REVENU}} = 0x05
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea50c940053b461efcf12693e93b4421d9}{ALLER\+\_\+\+EN\+\_\+\+PRISON}} = 0x06
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabc9ce8a7d0fdcc7a98b223d7fd2783f0}{SIMPLE\+\_\+\+VISITE}} = 0x07
+, \newline
+\mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea729e93d064cf1a2a211d19e686ae3953}{PRISON}} = 0x08
+, \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab7a6459deb364f1db6fe59b617ac0ba4}{PARC\+\_\+\+GRATUIT}} = 0x09
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the types of cases on the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_add3199ed19de73eb8c2dea31715cab8b}{red\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_a4ee66bd3680dff19bb1b3cf939468356}{blue\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_a202ce8515e39453b0f1bd560813a3bb5}{cyan\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_a5e07ff75141aa98fce031e9673455e10}{green\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_aa5474b6b059ef5d75276c76a6864d2e2}{mauve\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_a73b13e5b0a60ac626548cc9ae093b7f6}{pink\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_a599157363622312cf2c84b361e3b982e}{orange\+Group}}
+\item 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} \mbox{\hyperlink{_case_8hpp_af893d3a25723b59995049919e0a7761b}{yellow\+Group}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} $>$ \mbox{\hyperlink{_case_8hpp_a5a055492f62958ae9136ef20a96b4830}{all\+Groups}}
+\item 
+\mbox{\hyperlink{class_case}{Case}} \mbox{\hyperlink{_case_8hpp_a14ff089d53fef0e1d0cf50d133139935}{plateau}} \mbox{[}\mbox{\hyperlink{_case_8hpp_adc3c2556e84bebbe78c8a87fc459a6f8}{TAILLE\+\_\+\+PLATEAU}}\mbox{]}
+\item 
+\mbox{\hyperlink{class_case}{Case}} \mbox{\hyperlink{_case_8hpp_a5fc3fd3a8b9173fdcf5410e695b8c81d}{Prison}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_case_8hpp_adc3c2556e84bebbe78c8a87fc459a6f8}\index{Case.hpp@{Case.hpp}!TAILLE\_PLATEAU@{TAILLE\_PLATEAU}}
+\index{TAILLE\_PLATEAU@{TAILLE\_PLATEAU}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{TAILLE\_PLATEAU}{TAILLE\_PLATEAU}}
+{\footnotesize\ttfamily \label{_case_8hpp_adc3c2556e84bebbe78c8a87fc459a6f8} 
+\#define TAILLE\+\_\+\+PLATEAU~40}
+
+
+
+Number of cases on the game board. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}\index{Case.hpp@{Case.hpp}!CaseType@{CaseType}}
+\index{CaseType@{CaseType}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{CaseType}{CaseType}}
+{\footnotesize\ttfamily \label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e} 
+enum \mbox{\hyperlink{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7e}{Case\+Type}}}
+
+
+
+Enumeration for the types of cases on the game board. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TERRAIN\_GARE\_SERVICE\_PUBLIC@{TERRAIN\_GARE\_SERVICE\_PUBLIC}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!TERRAIN\_GARE\_SERVICE\_PUBLIC@{TERRAIN\_GARE\_SERVICE\_PUBLIC}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea90e38de572c631f80a5ec307a636ab19}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea90e38de572c631f80a5ec307a636ab19} 
+TERRAIN\+\_\+\+GARE\+\_\+\+SERVICE\+\_\+\+PUBLIC&Property, station, or utility. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANCE@{CHANCE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!CHANCE@{CHANCE}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea81d2bb6df05f24d8afc01889a493875c}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea81d2bb6df05f24d8afc01889a493875c} 
+CHANCE&Chance card case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAISSE\_DE\_COMMU@{CAISSE\_DE\_COMMU}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!CAISSE\_DE\_COMMU@{CAISSE\_DE\_COMMU}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ead7fc3494886110246e5385c59c9d3505}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ead7fc3494886110246e5385c59c9d3505} 
+CAISSE\+\_\+\+DE\+\_\+\+COMMU&Community Chest card case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TAXE\_DE\_LUXE@{TAXE\_DE\_LUXE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!TAXE\_DE\_LUXE@{TAXE\_DE\_LUXE}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea5bc97d9e6b422a79ba17961624314fd4}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea5bc97d9e6b422a79ba17961624314fd4} 
+TAXE\+\_\+\+DE\+\_\+\+LUXE&Luxury tax case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEPART@{DEPART}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!DEPART@{DEPART}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabffa83cf654a02772eb472b536e4eb8e}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabffa83cf654a02772eb472b536e4eb8e} 
+DEPART&Start case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMPOT\_SUR\_LE\_REVENU@{IMPOT\_SUR\_LE\_REVENU}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!IMPOT\_SUR\_LE\_REVENU@{IMPOT\_SUR\_LE\_REVENU}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab8ca1cb58bab130fe3cccca278123685}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab8ca1cb58bab130fe3cccca278123685} 
+IMPOT\+\_\+\+SUR\+\_\+\+LE\+\_\+\+REVENU&Income tax case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALLER\_EN\_PRISON@{ALLER\_EN\_PRISON}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!ALLER\_EN\_PRISON@{ALLER\_EN\_PRISON}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea50c940053b461efcf12693e93b4421d9}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea50c940053b461efcf12693e93b4421d9} 
+ALLER\+\_\+\+EN\+\_\+\+PRISON&Go to jail case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SIMPLE\_VISITE@{SIMPLE\_VISITE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!SIMPLE\_VISITE@{SIMPLE\_VISITE}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabc9ce8a7d0fdcc7a98b223d7fd2783f0}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eabc9ce8a7d0fdcc7a98b223d7fd2783f0} 
+SIMPLE\+\_\+\+VISITE&Just visiting jail case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRISON@{PRISON}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!PRISON@{PRISON}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea729e93d064cf1a2a211d19e686ae3953}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7ea729e93d064cf1a2a211d19e686ae3953} 
+PRISON&Jail case. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARC\_GRATUIT@{PARC\_GRATUIT}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!PARC\_GRATUIT@{PARC\_GRATUIT}}}\Hypertarget{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab7a6459deb364f1db6fe59b617ac0ba4}\label{_case_8hpp_a4fd76f4d0fbadc08ec99451b92478a7eab7a6459deb364f1db6fe59b617ac0ba4} 
+PARC\+\_\+\+GRATUIT&Free parking case. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}\index{Case.hpp@{Case.hpp}!Couleur@{Couleur}}
+\index{Couleur@{Couleur}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{Couleur}{Couleur}}
+{\footnotesize\ttfamily \label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7} 
+enum \mbox{\hyperlink{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}
+
+
+
+Base class for a game board case. 
+
+Represents a single case on the game board with various properties such as type, color, ownership, and building information (houses/hotels).
+
+Enumeration for the color groups of properties. \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_COLOR@{NO\_COLOR}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!NO\_COLOR@{NO\_COLOR}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a49ab6da9e5945a0af27ee598df5d5520}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a49ab6da9e5945a0af27ee598df5d5520} 
+NO\+\_\+\+COLOR&No color (default/unassigned). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROUGE@{ROUGE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!ROUGE@{ROUGE}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a92b33cebaccf73541ab06eca48a31e42} 
+ROUGE&Red color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLEU@{BLEU}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!BLEU@{BLEU}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a1b592b20aeb91b073f8f249231622230}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a1b592b20aeb91b073f8f249231622230} 
+BLEU&Blue color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CIAN@{CIAN}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!CIAN@{CIAN}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a872f25d993d14344612468278683d050}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a872f25d993d14344612468278683d050} 
+CIAN&Cyan color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VERT@{VERT}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!VERT@{VERT}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a14aeed4d25cc6ce52191b46c1d73af92}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a14aeed4d25cc6ce52191b46c1d73af92} 
+VERT&Green color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAUVE@{MAUVE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!MAUVE@{MAUVE}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a75c57e168c898879ae7e74fcaa887717}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a75c57e168c898879ae7e74fcaa887717} 
+MAUVE&Mauve (purple) color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROSE@{ROSE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!ROSE@{ROSE}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a5213e01e808cbbf8f0c2c7d9bd7264c8}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7a5213e01e808cbbf8f0c2c7d9bd7264c8} 
+ROSE&Pink color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ORANGE@{ORANGE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!ORANGE@{ORANGE}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7ace9ee4c1a6b777940c7f3a766a9a88d4}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7ace9ee4c1a6b777940c7f3a766a9a88d4} 
+ORANGE&Orange color group. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JAUNE@{JAUNE}!Case.hpp@{Case.hpp}}\index{Case.hpp@{Case.hpp}!JAUNE@{JAUNE}}}\Hypertarget{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1}\label{_case_8hpp_aa304d0ca681f782b1d7735da33037dd7aeb840a0760d5c5122e980d507891c1a1} 
+JAUNE&Yellow color group. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_case_8hpp_a5a055492f62958ae9136ef20a96b4830}\index{Case.hpp@{Case.hpp}!allGroups@{allGroups}}
+\index{allGroups@{allGroups}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{allGroups}{allGroups}}
+{\footnotesize\ttfamily \label{_case_8hpp_a5a055492f62958ae9136ef20a96b4830} 
+std\+::vector$<$\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}}$>$ all\+Groups\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a4ee66bd3680dff19bb1b3cf939468356}\index{Case.hpp@{Case.hpp}!blueGroup@{blueGroup}}
+\index{blueGroup@{blueGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{blueGroup}{blueGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_a4ee66bd3680dff19bb1b3cf939468356} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} blue\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a202ce8515e39453b0f1bd560813a3bb5}\index{Case.hpp@{Case.hpp}!cyanGroup@{cyanGroup}}
+\index{cyanGroup@{cyanGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{cyanGroup}{cyanGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_a202ce8515e39453b0f1bd560813a3bb5} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} cyan\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a5e07ff75141aa98fce031e9673455e10}\index{Case.hpp@{Case.hpp}!greenGroup@{greenGroup}}
+\index{greenGroup@{greenGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{greenGroup}{greenGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_a5e07ff75141aa98fce031e9673455e10} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} green\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_aa5474b6b059ef5d75276c76a6864d2e2}\index{Case.hpp@{Case.hpp}!mauveGroup@{mauveGroup}}
+\index{mauveGroup@{mauveGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{mauveGroup}{mauveGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_aa5474b6b059ef5d75276c76a6864d2e2} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} mauve\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a599157363622312cf2c84b361e3b982e}\index{Case.hpp@{Case.hpp}!orangeGroup@{orangeGroup}}
+\index{orangeGroup@{orangeGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{orangeGroup}{orangeGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_a599157363622312cf2c84b361e3b982e} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} orange\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a73b13e5b0a60ac626548cc9ae093b7f6}\index{Case.hpp@{Case.hpp}!pinkGroup@{pinkGroup}}
+\index{pinkGroup@{pinkGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{pinkGroup}{pinkGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_a73b13e5b0a60ac626548cc9ae093b7f6} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} pink\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a14ff089d53fef0e1d0cf50d133139935}\index{Case.hpp@{Case.hpp}!plateau@{plateau}}
+\index{plateau@{plateau}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{plateau}{plateau}}
+{\footnotesize\ttfamily \label{_case_8hpp_a14ff089d53fef0e1d0cf50d133139935} 
+\mbox{\hyperlink{class_case}{Case}} plateau\mbox{[}\mbox{\hyperlink{_case_8hpp_adc3c2556e84bebbe78c8a87fc459a6f8}{TAILLE\+\_\+\+PLATEAU}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_a5fc3fd3a8b9173fdcf5410e695b8c81d}\index{Case.hpp@{Case.hpp}!Prison@{Prison}}
+\index{Prison@{Prison}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{Prison}{Prison}}
+{\footnotesize\ttfamily \label{_case_8hpp_a5fc3fd3a8b9173fdcf5410e695b8c81d} 
+\mbox{\hyperlink{class_case}{Case}} Prison\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_add3199ed19de73eb8c2dea31715cab8b}\index{Case.hpp@{Case.hpp}!redGroup@{redGroup}}
+\index{redGroup@{redGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{redGroup}{redGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_add3199ed19de73eb8c2dea31715cab8b} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} red\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{_case_8hpp_af893d3a25723b59995049919e0a7761b}\index{Case.hpp@{Case.hpp}!yellowGroup@{yellowGroup}}
+\index{yellowGroup@{yellowGroup}!Case.hpp@{Case.hpp}}
+\doxysubsubsection{\texorpdfstring{yellowGroup}{yellowGroup}}
+{\footnotesize\ttfamily \label{_case_8hpp_af893d3a25723b59995049919e0a7761b} 
+\mbox{\hyperlink{struct_color_house_count}{Color\+House\+Count}} yellow\+Group\hspace{0.3cm}{\ttfamily [extern]}}
+

@@ -1,0 +1,479 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+Represents a player in the game.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+
+
+Inheritance diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a45fa04a2a4ff9235e6c100b7c6ab232a}{Player}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_player}{Player} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a5ed6e187ab571f2f0159b2d8113f1702}{pay\+Player}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}other\+Player, int amount)
+\begin{DoxyCompactList}\small\item\em Transfers money from this player to another player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a86ad66429e7bf8ef4640bac1d0f3476f}{add\+Money}} (int amount)
+\begin{DoxyCompactList}\small\item\em Adds money to the player\textquotesingle{}s balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a6c3d1fa200c295ed6807d6e63527e99d}{add\+Card}} (\mbox{\hyperlink{_player_8hpp_ad828a731e9f5484c74a9d06d90b032d6}{Cards}} card)
+\begin{DoxyCompactList}\small\item\em Adds a card to the player\textquotesingle{}s collection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a377659b01613102aadbb0d9762fad341}{exchange\+Card}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{_player_8hpp_ad828a731e9f5484c74a9d06d90b032d6}{Cards}} card)
+\begin{DoxyCompactList}\small\item\em Exchanges a card with another player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ad01242ffeea6100b6ee07bc945df934f}{set\+Position}} (unsigned int position)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s position on the game board. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_player_a86578410d347e59328294b9948bb7d90}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the player\textquotesingle{}s current position on the game board. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_player_ada1dfa2d5a58b0b2fb9fc3fdf363aca0}{get\+Money\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the player\textquotesingle{}s current money balance. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_player_a8b37bd6a10ddfa6e835fb63eb30310df}{set\+Deduct\+Money}} (unsigned int value)
+\begin{DoxyCompactList}\small\item\em Deducts money from the player\textquotesingle{}s balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aba90a5ef5644f625af16ca890e5bed36}{set\+In\+Prison}} (bool p)
+\begin{DoxyCompactList}\small\item\em Sets the player\textquotesingle{}s prison status. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a95157d5edc5a01129f5edef572c5b432}{get\+In\+Prison}} () const
+\begin{DoxyCompactList}\small\item\em Gets the player\textquotesingle{}s prison status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a79a872960539bd4b3b01f99cef9802ee}{set\+Out}} (bool out)
+\begin{DoxyCompactList}\small\item\em Sets whether the player is out of the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_abb7f7730b59e826e548e72f9af3aacda}{get\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Gets whether the player is out of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_abec5e618a877c7acbb9b92c0a9ba0ed9}{m\+\_\+money}}
+\begin{DoxyCompactList}\small\item\em The player\textquotesingle{}s current money balance. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_add634962cf5d664d2f7616af00082d80}{m\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em The player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_player_a5c23d1d995d9d9b9ebe42fa915d0887c}{m\+\_\+game\+\_\+position}}
+\begin{DoxyCompactList}\small\item\em The player\textquotesingle{}s current position on the game board. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_player_8hpp_ad828a731e9f5484c74a9d06d90b032d6}{Cards}} $>$ \mbox{\hyperlink{class_player_ad4460f25a3ebd46171cc70b1ffb20c1e}{m\+\_\+cartes}}
+\begin{DoxyCompactList}\small\item\em The cards in the player\textquotesingle{}s possession. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a5992a997bc79d388c2f6d227adbb4d0d}{m\+\_\+in\+Prison}}
+\begin{DoxyCompactList}\small\item\em True if the player is in prison, false otherwise. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a0b34f317cc0ea886e0b663b79fb20253}{m\+\_\+out}}
+\begin{DoxyCompactList}\small\item\em True if the player is out of the game, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a player in the game. 
+
+The \doxylink{class_player}{Player} class manages player properties such as money, position, cards, and prison status. It provides methods for interactions with other players and the game board. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_a45fa04a2a4ff9235e6c100b7c6ab232a}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily \label{class_player_a45fa04a2a4ff9235e6c100b7c6ab232a} 
+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_player}{Player} class. 
+
+Initializes the player with a given name and default properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the player. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_player_a45fa04a2a4ff9235e6c100b7c6ab232a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a6c3d1fa200c295ed6807d6e63527e99d}\index{Player@{Player}!addCard@{addCard}}
+\index{addCard@{addCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily \label{class_player_a6c3d1fa200c295ed6807d6e63527e99d} 
+void Player\+::add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8hpp_ad828a731e9f5484c74a9d06d90b032d6}{Cards}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Adds a card to the player\textquotesingle{}s collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to add. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_player_a6c3d1fa200c295ed6807d6e63527e99d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a86ad66429e7bf8ef4640bac1d0f3476f}\index{Player@{Player}!addMoney@{addMoney}}
+\index{addMoney@{addMoney}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addMoney()}{addMoney()}}
+{\footnotesize\ttfamily \label{class_player_a86ad66429e7bf8ef4640bac1d0f3476f} 
+void Player\+::add\+Money (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Adds money to the player\textquotesingle{}s balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to add. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_player_a86ad66429e7bf8ef4640bac1d0f3476f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a377659b01613102aadbb0d9762fad341}\index{Player@{Player}!exchangeCard@{exchangeCard}}
+\index{exchangeCard@{exchangeCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{exchangeCard()}{exchangeCard()}}
+{\footnotesize\ttfamily \label{class_player_a377659b01613102aadbb0d9762fad341} 
+void Player\+::exchange\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{\mbox{\hyperlink{_player_8hpp_ad828a731e9f5484c74a9d06d90b032d6}{Cards}}}]{card}{}\end{DoxyParamCaption})}
+
+
+
+Exchanges a card with another player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The player to exchange with. \\
+\hline
+{\em card} & The card to exchange. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_player_a377659b01613102aadbb0d9762fad341_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a95157d5edc5a01129f5edef572c5b432}\index{Player@{Player}!getInPrison@{getInPrison}}
+\index{getInPrison@{getInPrison}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getInPrison()}{getInPrison()}}
+{\footnotesize\ttfamily \label{class_player_a95157d5edc5a01129f5edef572c5b432} 
+bool Player\+::get\+In\+Prison (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the player\textquotesingle{}s prison status. 
+
+\begin{DoxyReturn}{Returns}
+True if the player is in prison, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_player_a95157d5edc5a01129f5edef572c5b432_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_ada1dfa2d5a58b0b2fb9fc3fdf363aca0}\index{Player@{Player}!getMoneyValue@{getMoneyValue}}
+\index{getMoneyValue@{getMoneyValue}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMoneyValue()}{getMoneyValue()}}
+{\footnotesize\ttfamily \label{class_player_ada1dfa2d5a58b0b2fb9fc3fdf363aca0} 
+unsigned int Player\+::get\+Money\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the player\textquotesingle{}s current money balance. 
+
+\begin{DoxyReturn}{Returns}
+The current money value. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_player_ada1dfa2d5a58b0b2fb9fc3fdf363aca0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85}\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85} 
+std\+::string Player\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the player\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+The name of the player. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a73e4ff2d70e62ca7e3be1d9b4ad9de85_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_abb7f7730b59e826e548e72f9af3aacda}\index{Player@{Player}!getOut@{getOut}}
+\index{getOut@{getOut}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getOut()}{getOut()}}
+{\footnotesize\ttfamily \label{class_player_abb7f7730b59e826e548e72f9af3aacda} 
+bool Player\+::get\+Out (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets whether the player is out of the game. 
+
+\begin{DoxyReturn}{Returns}
+True if the player is out, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_player_abb7f7730b59e826e548e72f9af3aacda_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a86578410d347e59328294b9948bb7d90}\index{Player@{Player}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{class_player_a86578410d347e59328294b9948bb7d90} 
+unsigned int Player\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the player\textquotesingle{}s current position on the game board. 
+
+\begin{DoxyReturn}{Returns}
+The current position. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_player_a86578410d347e59328294b9948bb7d90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a5ed6e187ab571f2f0159b2d8113f1702}\index{Player@{Player}!payPlayer@{payPlayer}}
+\index{payPlayer@{payPlayer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{payPlayer()}{payPlayer()}}
+{\footnotesize\ttfamily \label{class_player_a5ed6e187ab571f2f0159b2d8113f1702} 
+bool Player\+::pay\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{other\+Player}{, }\item[{int}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Transfers money from this player to another player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Player} & The player receiving the money. \\
+\hline
+{\em amount} & The amount to transfer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the payment was successful, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_player_a5ed6e187ab571f2f0159b2d8113f1702_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a8b37bd6a10ddfa6e835fb63eb30310df}\index{Player@{Player}!setDeductMoney@{setDeductMoney}}
+\index{setDeductMoney@{setDeductMoney}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setDeductMoney()}{setDeductMoney()}}
+{\footnotesize\ttfamily \label{class_player_a8b37bd6a10ddfa6e835fb63eb30310df} 
+unsigned int Player\+::set\+Deduct\+Money (\begin{DoxyParamCaption}\item[{unsigned int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Deducts money from the player\textquotesingle{}s balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The amount to deduct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remaining money balance. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_player_a8b37bd6a10ddfa6e835fb63eb30310df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_aba90a5ef5644f625af16ca890e5bed36}\index{Player@{Player}!setInPrison@{setInPrison}}
+\index{setInPrison@{setInPrison}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setInPrison()}{setInPrison()}}
+{\footnotesize\ttfamily \label{class_player_aba90a5ef5644f625af16ca890e5bed36} 
+void Player\+::set\+In\+Prison (\begin{DoxyParamCaption}\item[{bool}]{p}{}\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s prison status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & True if the player is in prison, false otherwise. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_player_aba90a5ef5644f625af16ca890e5bed36_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_a79a872960539bd4b3b01f99cef9802ee}\index{Player@{Player}!setOut@{setOut}}
+\index{setOut@{setOut}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setOut()}{setOut()}}
+{\footnotesize\ttfamily \label{class_player_a79a872960539bd4b3b01f99cef9802ee} 
+void Player\+::set\+Out (\begin{DoxyParamCaption}\item[{bool}]{out}{}\end{DoxyParamCaption})}
+
+
+
+Sets whether the player is out of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & True if the player is out, false otherwise. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_player_a79a872960539bd4b3b01f99cef9802ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_player_ad01242ffeea6100b6ee07bc945df934f}\index{Player@{Player}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily \label{class_player_ad01242ffeea6100b6ee07bc945df934f} 
+void Player\+::set\+Position (\begin{DoxyParamCaption}\item[{unsigned int}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Sets the player\textquotesingle{}s position on the game board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to set. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_player_ad01242ffeea6100b6ee07bc945df934f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_ad4460f25a3ebd46171cc70b1ffb20c1e}\index{Player@{Player}!m\_cartes@{m\_cartes}}
+\index{m\_cartes@{m\_cartes}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_cartes}{m\_cartes}}
+{\footnotesize\ttfamily \label{class_player_ad4460f25a3ebd46171cc70b1ffb20c1e} 
+std\+::vector$<$\mbox{\hyperlink{_player_8hpp_ad828a731e9f5484c74a9d06d90b032d6}{Cards}}$>$ Player\+::m\+\_\+cartes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The cards in the player\textquotesingle{}s possession. 
+
+\Hypertarget{class_player_a5c23d1d995d9d9b9ebe42fa915d0887c}\index{Player@{Player}!m\_game\_position@{m\_game\_position}}
+\index{m\_game\_position@{m\_game\_position}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_game\_position}{m\_game\_position}}
+{\footnotesize\ttfamily \label{class_player_a5c23d1d995d9d9b9ebe42fa915d0887c} 
+unsigned int Player\+::m\+\_\+game\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The player\textquotesingle{}s current position on the game board. 
+
+\Hypertarget{class_player_a5992a997bc79d388c2f6d227adbb4d0d}\index{Player@{Player}!m\_inPrison@{m\_inPrison}}
+\index{m\_inPrison@{m\_inPrison}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_inPrison}{m\_inPrison}}
+{\footnotesize\ttfamily \label{class_player_a5992a997bc79d388c2f6d227adbb4d0d} 
+bool Player\+::m\+\_\+in\+Prison\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+True if the player is in prison, false otherwise. 
+
+\Hypertarget{class_player_abec5e618a877c7acbb9b92c0a9ba0ed9}\index{Player@{Player}!m\_money@{m\_money}}
+\index{m\_money@{m\_money}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_money}{m\_money}}
+{\footnotesize\ttfamily \label{class_player_abec5e618a877c7acbb9b92c0a9ba0ed9} 
+int Player\+::m\+\_\+money\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The player\textquotesingle{}s current money balance. 
+
+\Hypertarget{class_player_add634962cf5d664d2f7616af00082d80}\index{Player@{Player}!m\_name@{m\_name}}
+\index{m\_name@{m\_name}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_name}{m\_name}}
+{\footnotesize\ttfamily \label{class_player_add634962cf5d664d2f7616af00082d80} 
+std\+::string Player\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The player\textquotesingle{}s name. 
+
+\Hypertarget{class_player_a0b34f317cc0ea886e0b663b79fb20253}\index{Player@{Player}!m\_out@{m\_out}}
+\index{m\_out@{m\_out}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{m\_out}{m\_out}}
+{\footnotesize\ttfamily \label{class_player_a0b34f317cc0ea886e0b663b79fb20253} 
+bool Player\+::m\+\_\+out\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+True if the player is out of the game, false otherwise. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8hpp}{Player.\+hpp}}\item 
+\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

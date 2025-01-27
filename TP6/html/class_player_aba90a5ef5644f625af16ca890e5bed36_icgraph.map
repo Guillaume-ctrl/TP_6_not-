@@ -1,0 +1,5 @@
+<map id="Player::setInPrison" name="Player::setInPrison">
+<area shape="rect" id="Node000001" title="Sets the player&#39;s prison status." alt="" coords="142,5,274,32"/>
+<area shape="rect" id="Node000002" href="$class_game.html#aa333825d0bca80e91e53c7e23f053405" title="Executes the main game loop for the current player&#39;s turn." alt="" coords="5,5,94,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,21,94,21,94,16,126,16"/>
+</map>
